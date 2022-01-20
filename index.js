@@ -2,6 +2,9 @@
 const express = require("express");
 const app = express();
 
+// Export database
+require("./config/db.config");
+
 //Require that "dontenv" loads environment variables from the .env file into process.env.
 require("dotenv").config({ path: "./config/config.env" });
 

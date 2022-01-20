@@ -1,5 +1,5 @@
 const transactions = require("../routes/transactions");
 
 module.exports = (app) => {
-  app.use("/", transactions);
+  app.use("/transactions", transactions);
 };
